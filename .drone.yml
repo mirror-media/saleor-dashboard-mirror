@@ -40,7 +40,7 @@ pipeline:
   buildSaleorThenPublish:
     image: plugins/gcr
     repo: mirrormedia-1470651750304/${DRONE_REPO_NAME}
-    tag: ${DRONE_BRANCH}_${DRONE_COMMIT_AUTHOR}_${DRONE_BUILD_NUMBER}_Saleor
+    tag: ${DRONE_BRANCH}_${DRONE_COMMIT_AUTHOR}_${DRONE_BUILD_NUMBER}_saleor-dashboard
     environment:
       - DOCKER_LAUNCH_DEBUG=true
       - API_URI=https://saleorbackend-dev.mirrormedia.mg/graphql/
