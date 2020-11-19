@@ -15,3 +15,4 @@ FROM nginx:stable
 WORKDIR /app
 COPY ./nginx/default.conf /etc/nginx/conf.d/default.conf
 COPY --from=builder /app/build/ /app/
+CMD npm start -- --host 0.0.0.0 --verbose
