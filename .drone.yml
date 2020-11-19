@@ -31,8 +31,8 @@ pipeline:
     secrets: [google_credentials]
     commands:
       - gcloud source repos clone configs ../configs
-      - cp ../configs/saleor-mirror/dev/readr/config.py ./configs/config.py
-      - cp ../configs/saleor-mirror/dev/gcskeyfile.json ./configs/gcskeyfile.json
+      - cp ../configs/mirror-media/saleor-mirror/dev ./configs/config.py
+      # - cp ../configs/saleor-mirror/dev/gcskeyfile.json ./configs/gcskeyfile.json
     when:
       event: [push]
       branch: [master, dev]
@@ -43,6 +43,7 @@ pipeline:
     tag: ${DRONE_BRANCH}_${DRONE_COMMIT_AUTHOR}_${DRONE_BUILD_NUMBER}_Saleor
     environment:
       - DOCKER_LAUNCH_DEBUG=true
+      - API_URI=https://saleor-dev.mirrormedia.mg/graphql/
     secrets: [google_credentials]
     when:
       event: [push]
@@ -60,45 +61,6 @@ pipeline:
     vars:
       image: gcr.io/mirrormedia-1470651750304/${DRONE_REPO_NAME}:${DRONE_BRANCH}_${DRONE_COMMIT_AUTHOR}_${DRONE_BUILD_NUMBER}_saleor-dashboard
       app: ${DRONE_REPO_NAME}-saleor-dashboard
-      tier: backend
-    when:
-      event: [push]
-      branch: [dev, master]
-
-  getGraphQLDevConfig:
-    image: gcr.io/mirrormedia-1470651750304/drone-cloud-sdk:latest
-    secrets: [google_credentials]
-    commands:
-      # - gcloud source repos clone configs ../configs
-      - cp ../configs/saleor-dashboard/ ./configs/config.js
-      - cp ../configs/saleor-dashboard/dev/gcskeyfile.json ./configs/gcskeyfile.json
-    when:
-      event: [push]
-      branch: [dev, master]
-
-  buildGraphQLThenPublish:
-    image: plugins/gcr
-    repo: mirrormedia-1470651750304/${DRONE_REPO_NAME}
-    tag: ${DRONE_BRANCH}_${DRONE_COMMIT_AUTHOR}_${DRONE_BUILD_NUMBER}_graphql
-    environment:
-      - DOCKER_LAUNCH_DEBUG=true
-    secrets: [google_credentials]
-    when:
-      event: [push]
-      branch: [dev, master]
-
-  deployGraphQLDev:
-    image: nytimes/drone-gke
-    zone: asia-east1-a
-    cluster: dev
-    namespace: default
-    verbose: true
-    secrets:
-      - source: google_credentials
-        target: token
-    vars:
-      image: gcr.io/mirrormedia-1470651750304/${DRONE_REPO_NAME}:${DRONE_BRANCH}_${DRONE_COMMIT_AUTHOR}_${DRONE_BUILD_NUMBER}_graphql
-      app: ${DRONE_REPO_NAME}-graphql
       tier: backend
     when:
       event: [push]
@@ -128,7 +90,7 @@ pipeline:
     template: >
       {{#success build.status}}
         *success* ${DRONE_REPO_NAME}:${DRONE_BRANCH}_${DRONE_COMMIT_AUTHOR}_${DRONE_BUILD_NUMBER} was well served.
-        Check out our new <https://saleorbackend-dev.mirrormedia.mg/admin|Saleor Backend>.
+        Check out our new <https://saleor-dashboard-dev.mirrormedia.mg/admin|Saleor Dashboard>.
       {{else}}
         Houston, we have a problem. Build <${DRONE_BUILD_LINK}|#{{build.number}}> failed.
       {{/success}}
