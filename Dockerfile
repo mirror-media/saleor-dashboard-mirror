@@ -29,5 +29,6 @@ ARG STATIC_URL
 ENV API_URI ${API_URI:-http://104.155.209.114:80/graphql/}
 ENV APP_MOUNT_URI ${APP_MOUNT_URI:-/dashboard/}
 ENV STATIC_URL ${STATIC_URL:-/dashboard/}
+
 EXPOSE 9000
 CMD npm start -- --host 0.0.0.0
