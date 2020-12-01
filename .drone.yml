@@ -43,7 +43,7 @@ pipeline:
     tag: ${DRONE_BRANCH}_${DRONE_COMMIT_AUTHOR}_${DRONE_BUILD_NUMBER}_saleor-dashboard
     environment:
       - DOCKER_LAUNCH_DEBUG=true
-      - API_URI=https://saleorbackend-dev.mirrormedia.mg/graphql/
+      - API_URI=http://104.155.209.114/graphql/
     secrets: [google_credentials]
     when:
       event: [push]
