@@ -23,7 +23,6 @@ WORKDIR /app
 COPY package*.json ./
 RUN npm install
 COPY . .
-ENV APP_MOUNT_URI
 ENV API_URI ${API_URI:-http://104.155.209.114:80/graphql/}
 ENV APP_MOUNT_URI ${APP_MOUNT_URI:-/dashboard/}
 ENV STATIC_URL ${STATIC_URL:-/dashboard/}
