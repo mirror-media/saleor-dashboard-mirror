@@ -31,8 +31,11 @@ pipeline:
     secrets: [google_credentials]
     commands:
       - gcloud source repos clone configs ../configs --project mirrormedia-1470651750304
+      - ls ../configs
       - mkdir configs
-      - cp ../configs/mirror-media/saleor-mirror/dev/config.py ./configs/config.py
+      - cp ../configs/mirror-media/saleor-mirror/dev/configs.py ./configs/configs.py
+      - cp ../configs/gcskeyfile.json ./configs/gcskeyfile.json
+      - rm -rf ../configs
     when:
       event: [push]
       branch: [master, dev]
