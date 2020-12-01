@@ -30,7 +30,7 @@ pipeline:
     image: gcr.io/mirrormedia-1470651750304/drone-cloud-sdk:latest
     secrets: [google_credentials]
     commands:
-      - gcloud source repos clone configs ../configs
+      - gcloud source repos clone configs ../configs --project mirrormedia-1470651750304
       - mkdir configs
       - cp ../configs/mirror-media/saleor-mirror/dev/config.py ./configs/config.py
     when:
