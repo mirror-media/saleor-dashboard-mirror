@@ -42,7 +42,7 @@ export const shop: SiteSettings_shop = {
   description: "Lorem ipsum dolor sit amet",
   domain: {
     __typename: "Domain",
-    host: "localhost:8000"
+    host: "104.155.209.114"
   },
   name: "Saleor e-commerce"
 };

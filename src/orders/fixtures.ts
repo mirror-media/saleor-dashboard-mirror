@@ -1485,7 +1485,7 @@ export const invoices: InvoiceFragment[] = [
     number: "1/07/2020",
     status: JobStatusEnum.PENDING,
     url:
-      "http://localhost:8000/media/invoices/invoice-1/07/2020-order-20-1fef611b-7514-4dc6-aee3-09a8232b1d6a.pdf"
+      "http://104.155.209.114/media/invoices/invoice-1/07/2020-order-20-1fef611b-7514-4dc6-aee3-09a8232b1d6a.pdf"
   },
   {
     __typename: "Invoice",
@@ -1494,7 +1494,7 @@ export const invoices: InvoiceFragment[] = [
     number: "1/07/2020",
     status: JobStatusEnum.SUCCESS,
     url:
-      "http://localhost:8000/media/invoices/invoice-1/07/2020-order-20-8df26967-ad21-4075-a446-cef44ae05197.pdf"
+      "http://104.155.209.114/media/invoices/invoice-1/07/2020-order-20-8df26967-ad21-4075-a446-cef44ae05197.pdf"
   },
   {
     __typename: "Invoice",
@@ -1503,7 +1503,7 @@ export const invoices: InvoiceFragment[] = [
     number: "1/07/2020",
     status: JobStatusEnum.SUCCESS,
     url:
-      "http://localhost:8000/media/invoices/invoice-1/07/2020-order-20-5ebc85e0-e587-4386-8292-9b85839281e6.pdf"
+      "http://104.155.209.114/media/invoices/invoice-1/07/2020-order-20-5ebc85e0-e587-4386-8292-9b85839281e6.pdf"
   },
   {
     __typename: "Invoice",
@@ -1512,6 +1512,6 @@ export const invoices: InvoiceFragment[] = [
     number: "1/07/2020",
     status: JobStatusEnum.SUCCESS,
     url:
-      "http://localhost:8000/media/invoices/invoice-1/07/2020-order-20-0e449e10-ef4b-4066-bebe-361f670b6820.pdf"
+      "http://104.155.209.114/media/invoices/invoice-1/07/2020-order-20-0e449e10-ef4b-4066-bebe-361f670b6820.pdf"
   }
 ];

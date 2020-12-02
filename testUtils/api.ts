@@ -38,7 +38,7 @@ function setupApi() {
   const link = new BatchHttpLink({
     // @ts-ignore
     fetch,
-    uri: process.env.API_URI || "http://localhost:8000/graphql/"
+    uri: process.env.API_URI || "http://104.155.209.114/graphql/"
   });
   const apolloClient = new ApolloClient({
     cache,
