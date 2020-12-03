@@ -32,7 +32,7 @@ spec:
     spec:
       containers:
       - image: {{.image}}
-#         imagePullPolicy: IfNotPresent
+        imagePullPolicy: IfNotPresent
         name: {{.app}}
         ports:
         - containerPort: 3000
