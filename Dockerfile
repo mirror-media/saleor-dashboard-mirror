@@ -17,13 +17,16 @@
 # COPY --from=builder /app/build/ /app/
 # CMD npm start -- --host 0.0.0.0 --verbose
 
+# ===dev===
 FROM node:10
 
 WORKDIR /app
 COPY package*.json ./
 RUN npm install
 COPY . .
-ENV API_URI ${API_URI:-http://104.155.209.114:80/graphql/}
+ARG API_URI
+ARG APP_MOUNT_URI
+ENV API_URI=http://104.155.209.114:80/graphql/
 ENV APP_MOUNT_URI ${APP_MOUNT_URI:-/dashboard/}
 ENV STATIC_URL ${STATIC_URL:-/dashboard/}
 
