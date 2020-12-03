@@ -45,9 +45,9 @@ pipeline:
     repo: mirrormedia-1470651750304/${DRONE_REPO_NAME}
     tag: ${DRONE_BRANCH}_${DRONE_COMMIT_AUTHOR}_${DRONE_BUILD_NUMBER}_saleor-dashboard
     environment:
-      - DOCKER_LAUNCH_DEBUG=true
-      - APP_MOUNT_URI=http://35.201.139.78/dashboard/
-      - API_URI=http://104.155.209.114/graphql/
+      DOCKER_LAUNCH_DEBUG=true
+      APP_MOUNT_URI=http://35.201.139.78/dashboard/
+      API_URI=http://104.155.209.114/graphql/
 
     secrets: [google_credentials]
     when:
