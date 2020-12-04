@@ -48,9 +48,9 @@ pipeline:
       - DOCKER_LAUNCH_DEBUG=true
       - APP_MOUNT_URI=http://35.201.139.78/dashboard/
       - API_URI=http://104.155.209.114/graphql/
-    commands:
-      - echo ${API_URI}
-      - echo ${APP_MOUNT_URI}
+    # commands:
+    #   - echo ${API_URI}
+    #   - echo ${APP_MOUNT_URI}
 
     secrets: [google_credentials]
     when:
