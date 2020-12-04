@@ -46,6 +46,7 @@ pipeline:
     tag: ${DRONE_BRANCH}_${DRONE_COMMIT_AUTHOR}_${DRONE_BUILD_NUMBER}_saleor-dashboard
     environment:
       - DOCKER_LAUNCH_DEBUG=true
+    build_args:
       - APP_MOUNT_URI=http://35.201.139.78/dashboard/
       - API_URI=http://104.155.209.114/graphql/
     # commands:
