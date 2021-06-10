@@ -9,8 +9,17 @@ spec:
   ports:
   - port: 80
     protocol: TCP
-    targetPort: 3000
+    targetPort: 9000
   type: LoadBalancer
+---
+# kind: ConfigMap
+# apiVersion: v1
+# metadata:
+#   name: saleor-dashboard
+#   namespace: default
+#   selfLink: /api/v1/namespaces/default/configmaps/saleor-dashboard
+# data:
+#   config.js: |- 
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -35,7 +44,7 @@ spec:
         imagePullPolicy: IfNotPresent
         name: {{.app}}
         ports:
-        - containerPort: 3000
+        - containerPort: 9000
           protocol: TCP
       terminationGracePeriodSeconds: 30
   minReadySeconds: 20
