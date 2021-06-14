@@ -10,18 +10,13 @@ import {
 import { SetPassword, SetPasswordVariables } from "./types/SetPassword";
 
 export const tokenAuthMutation = gql`
-  ${fragmentUser}
   mutation TokenAuth($email: String!, $password: String!) {
-    tokenCreate(email: $email, password: $password) {
-      errors: accountErrors {
-        field
-        message
-      }
-      csrfToken
+    ObtainJSONWebToken {
+      refreshExpiresIn
+      success
+
       token
-      user {
-        ...User
-      }
+      refreshToken
     }
   }
 `;
@@ -40,7 +35,8 @@ export const tokenVerifyMutation = gql`
 
 export const tokenRefreshMutation = gql`
   mutation RefreshToken($token: String!) {
-    tokenRefresh(csrfToken: $token) {
+    RefreshToken {
+      success
       token
     }
   }
