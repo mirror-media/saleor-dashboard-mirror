@@ -13,19 +13,13 @@ Cypress.Commands.add("loginUser", () =>
 
 Cypress.Commands.add("loginUserViaRequest", () => {
   const logInMutationQuery = `mutation TokenAuth($email: String!, $password: String!) {
-    tokenCreate(email: $email, password: $password) {
+    ObtainJSONWebToken{
+
+      refreshExpiresIn
+      success
+
       token
-      errors: accountErrors {
-        code
-        field
-        message
-        __typename
-      }
-      user {
-        id
-        __typename
-      }
-      __typename
+      refreshToken
     }
   }`;
 
