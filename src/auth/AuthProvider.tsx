@@ -67,7 +67,7 @@ export function useAuthProvider(
       if (user) {
         setTokens(
           result.tokenCreate.token,
-          result.tokenCreate.csrfToken,
+          result.tokenCreate.refreshToken,
           persistToken
         );
       }

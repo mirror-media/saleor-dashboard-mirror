@@ -10,11 +10,9 @@ import {
 import { SetPassword, SetPasswordVariables } from "./types/SetPassword";
 
 export const tokenAuthMutation = gql`
-  mutation TokenAuth($email: String!, $password: String!) {
-    ObtainJSONWebToken {
-      refreshExpiresIn
+  mutation tokenAuth($email: String!, $password: String!) {
+    tokenCreate(password: $password, email: $email) {
       success
-
       token
       refreshToken
     }

@@ -38,8 +38,9 @@ export interface TokenAuth_tokenCreate_user {
 export interface TokenAuth_tokenCreate {
   __typename: "CreateToken";
   errors: TokenAuth_tokenCreate_errors[];
-  csrfToken: string | null;
+  // csrfToken: string | null;
   token: string | null;
+  refreshToken: string | null;
   user: TokenAuth_tokenCreate_user | null;
 }
 
