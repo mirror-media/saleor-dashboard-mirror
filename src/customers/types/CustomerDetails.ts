@@ -99,7 +99,7 @@ export interface CustomerDetails_user_lastPlacedOrder {
 }
 
 export interface CustomerDetails_user {
-  __typename: "User";
+  __typename: "Member";
   id: string;
   email: string;
   firstName: string;

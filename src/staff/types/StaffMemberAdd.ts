@@ -33,7 +33,7 @@ export interface StaffMemberAdd_staffCreate_user_avatar {
 }
 
 export interface StaffMemberAdd_staffCreate_user {
-  __typename: "User";
+  __typename: "Member";
   id: string;
   email: string;
   firstName: string;

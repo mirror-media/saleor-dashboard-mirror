@@ -14,7 +14,7 @@ export interface ListCustomers_customers_edges_node_orders {
 }
 
 export interface ListCustomers_customers_edges_node {
-  __typename: "User";
+  __typename: "Member";
   id: string;
   email: string;
   firstName: string;

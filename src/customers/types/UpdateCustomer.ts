@@ -59,7 +59,7 @@ export interface UpdateCustomer_customerUpdate_user_defaultBillingAddress {
 }
 
 export interface UpdateCustomer_customerUpdate_user {
-  __typename: "User";
+  __typename: "Member";
   id: string;
   email: string;
   firstName: string;

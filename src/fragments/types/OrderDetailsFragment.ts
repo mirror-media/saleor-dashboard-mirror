@@ -43,7 +43,7 @@ export interface OrderDetailsFragment_billingAddress {
 }
 
 export interface OrderDetailsFragment_events_user {
-  __typename: "User";
+  __typename: "Member";
   id: string;
   email: string;
 }
@@ -265,7 +265,7 @@ export interface OrderDetailsFragment_totalCaptured {
 }
 
 export interface OrderDetailsFragment_user {
-  __typename: "User";
+  __typename: "Member";
   id: string;
   email: string;
 }

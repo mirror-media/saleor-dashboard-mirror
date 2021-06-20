@@ -131,7 +131,7 @@ const OrderCustomer: React.FC<OrderCustomerProps> = props => {
                 const value = event.target.value;
 
                 onCustomerEdit({
-                  [value.includes("@") ? "userEmail" : "user"]: value
+                  [value.includes("@") ? "userEmail" : "Member"]: value
                 });
                 toggleEditMode();
               };

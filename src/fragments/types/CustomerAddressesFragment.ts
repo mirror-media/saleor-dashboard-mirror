@@ -39,7 +39,7 @@ export interface CustomerAddressesFragment_defaultShippingAddress {
 }
 
 export interface CustomerAddressesFragment {
-  __typename: "User";
+  __typename: "Member";
   id: string;
   email: string;
   firstName: string;

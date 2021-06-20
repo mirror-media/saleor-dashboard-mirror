@@ -14,7 +14,7 @@ export interface PermissionGroupDetailsFragment_users_avatar {
 }
 
 export interface PermissionGroupDetailsFragment_users {
-  __typename: "User";
+  __typename: "Member";
   id: string;
   firstName: string;
   lastName: string;

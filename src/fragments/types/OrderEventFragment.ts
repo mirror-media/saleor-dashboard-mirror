@@ -9,7 +9,7 @@ import { OrderEventsEmailsEnum, OrderEventsEnum } from "./../../types/globalType
 // ====================================================
 
 export interface OrderEventFragment_user {
-  __typename: "User";
+  __typename: "Member";
   id: string;
   email: string;
 }

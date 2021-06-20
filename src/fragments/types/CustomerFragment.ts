@@ -7,7 +7,7 @@
 // ====================================================
 
 export interface CustomerFragment {
-  __typename: "User";
+  __typename: "Member";
   id: string;
   email: string;
   firstName: string;

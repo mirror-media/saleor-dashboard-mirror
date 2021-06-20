@@ -51,7 +51,7 @@ export interface FulfillOrder_orderFulfill_order_billingAddress {
 }
 
 export interface FulfillOrder_orderFulfill_order_events_user {
-  __typename: "User";
+  __typename: "Member";
   id: string;
   email: string;
 }
@@ -273,7 +273,7 @@ export interface FulfillOrder_orderFulfill_order_totalCaptured {
 }
 
 export interface FulfillOrder_orderFulfill_order_user {
-  __typename: "User";
+  __typename: "Member";
   id: string;
   email: string;
 }

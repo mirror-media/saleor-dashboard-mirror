@@ -20,7 +20,7 @@ export interface StaffAvatarDelete_userAvatarDelete_user_avatar {
 }
 
 export interface StaffAvatarDelete_userAvatarDelete_user {
-  __typename: "User";
+  __typename: "Member";
   id: string;
   avatar: StaffAvatarDelete_userAvatarDelete_user_avatar | null;
 }

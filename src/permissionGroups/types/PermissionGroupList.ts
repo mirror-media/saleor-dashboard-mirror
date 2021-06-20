@@ -9,7 +9,7 @@ import { PermissionGroupFilterInput, PermissionGroupSortingInput } from "./../..
 // ====================================================
 
 export interface PermissionGroupList_permissionGroups_edges_node_users {
-  __typename: "User";
+  __typename: "Member";
   id: string;
   firstName: string;
   lastName: string;

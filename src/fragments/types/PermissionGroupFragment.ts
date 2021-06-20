@@ -7,7 +7,7 @@
 // ====================================================
 
 export interface PermissionGroupFragment_users {
-  __typename: "User";
+  __typename: "Member";
   id: string;
   firstName: string;
   lastName: string;

@@ -15,7 +15,7 @@ export interface CreateCustomer_customerCreate_errors {
 }
 
 export interface CreateCustomer_customerCreate_user {
-  __typename: "User";
+  __typename: "Member";
   id: string;
 }
 

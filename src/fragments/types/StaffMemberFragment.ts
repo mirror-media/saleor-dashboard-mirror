@@ -7,7 +7,7 @@
 // ====================================================
 
 export interface StaffMemberFragment {
-  __typename: "User";
+  __typename: "Member";
   id: string;
   email: string;
   firstName: string;

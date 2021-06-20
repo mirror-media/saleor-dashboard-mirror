@@ -93,7 +93,7 @@ export interface Home_productTopToday {
 }
 
 export interface Home_activities_edges_node_user {
-  __typename: "User";
+  __typename: "Member";
   id: string;
   email: string;
 }

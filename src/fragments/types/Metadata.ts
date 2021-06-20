@@ -19,7 +19,7 @@ export interface Metadata_privateMetadata {
 }
 
 export interface Metadata {
-  __typename: "ServiceAccount" | "App" | "Product" | "ProductType" | "Attribute" | "Category" | "ProductVariant" | "DigitalContent" | "Collection" | "User" | "Checkout" | "Order" | "Fulfillment" | "Invoice";
+  __typename: "ServiceAccount" | "App" | "Product" | "ProductType" | "Attribute" | "Category" | "ProductVariant" | "DigitalContent" | "Collection" | "Member" | "Checkout" | "Order" | "Fulfillment" | "Invoice";
   metadata: (Metadata_metadata | null)[];
   privateMetadata: (Metadata_privateMetadata | null)[];
 }

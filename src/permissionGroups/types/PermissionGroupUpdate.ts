@@ -20,7 +20,7 @@ export interface PermissionGroupUpdate_permissionGroupUpdate_group_users_avatar 
 }
 
 export interface PermissionGroupUpdate_permissionGroupUpdate_group_users {
-  __typename: "User";
+  __typename: "Member";
   id: string;
   firstName: string;
   lastName: string;

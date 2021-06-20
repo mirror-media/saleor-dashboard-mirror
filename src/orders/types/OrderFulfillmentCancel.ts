@@ -49,7 +49,7 @@ export interface OrderFulfillmentCancel_orderFulfillmentCancel_order_billingAddr
 }
 
 export interface OrderFulfillmentCancel_orderFulfillmentCancel_order_events_user {
-  __typename: "User";
+  __typename: "Member";
   id: string;
   email: string;
 }
@@ -271,7 +271,7 @@ export interface OrderFulfillmentCancel_orderFulfillmentCancel_order_totalCaptur
 }
 
 export interface OrderFulfillmentCancel_orderFulfillmentCancel_order_user {
-  __typename: "User";
+  __typename: "Member";
   id: string;
   email: string;
 }

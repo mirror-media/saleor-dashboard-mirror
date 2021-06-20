@@ -20,7 +20,7 @@ export interface VerifyToken_tokenVerify_user_avatar {
 }
 
 export interface VerifyToken_tokenVerify_user {
-  __typename: "User";
+  __typename: "Member";
   id: string;
   email: string;
   firstName: string;

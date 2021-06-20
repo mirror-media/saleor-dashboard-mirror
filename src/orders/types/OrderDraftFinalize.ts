@@ -49,7 +49,7 @@ export interface OrderDraftFinalize_draftOrderComplete_order_billingAddress {
 }
 
 export interface OrderDraftFinalize_draftOrderComplete_order_events_user {
-  __typename: "User";
+  __typename: "Member";
   id: string;
   email: string;
 }
@@ -271,7 +271,7 @@ export interface OrderDraftFinalize_draftOrderComplete_order_totalCaptured {
 }
 
 export interface OrderDraftFinalize_draftOrderComplete_order_user {
-  __typename: "User";
+  __typename: "Member";
   id: string;
   email: string;
 }

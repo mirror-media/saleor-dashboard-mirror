@@ -33,7 +33,7 @@ export interface StaffMemberUpdate_staffUpdate_user_avatar {
 }
 
 export interface StaffMemberUpdate_staffUpdate_user {
-  __typename: "User";
+  __typename: "Member";
   id: string;
   email: string;
   firstName: string;

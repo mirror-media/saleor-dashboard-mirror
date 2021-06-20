@@ -461,7 +461,7 @@ const AppLayout: React.FC<AppLayoutProps> = ({ children }) => {
                           <Chip
                             avatar={
                               user.avatar && (
-                                <Avatar alt="user" src={user.avatar.url} />
+                                <Avatar alt="Member" src={user.avatar.url} />
                               )
                             }
                             classes={{

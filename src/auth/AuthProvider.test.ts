@@ -31,7 +31,7 @@ beforeEach(() => {
   sessionStorage.clear();
 });
 
-describe("User", () => {
+describe("Member", () => {
   it("will be logged in if has valid credentials", async done => {
     const hook = renderAuthProvider(apolloClient);
 

@@ -15,7 +15,7 @@ export interface OrderAddNote_orderAddNote_errors {
 }
 
 export interface OrderAddNote_orderAddNote_order_events_user {
-  __typename: "User";
+  __typename: "Member";
   id: string;
   email: string;
 }

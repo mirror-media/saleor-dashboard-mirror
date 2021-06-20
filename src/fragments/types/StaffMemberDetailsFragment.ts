@@ -27,7 +27,7 @@ export interface StaffMemberDetailsFragment_avatar {
 }
 
 export interface StaffMemberDetailsFragment {
-  __typename: "User";
+  __typename: "Member";
   id: string;
   email: string;
   firstName: string;

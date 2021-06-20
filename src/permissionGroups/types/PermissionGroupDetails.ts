@@ -14,7 +14,7 @@ export interface PermissionGroupDetails_permissionGroup_users_avatar {
 }
 
 export interface PermissionGroupDetails_permissionGroup_users {
-  __typename: "User";
+  __typename: "Member";
   id: string;
   firstName: string;
   lastName: string;
@@ -55,7 +55,7 @@ export interface PermissionGroupDetails_user_userPermissions {
 }
 
 export interface PermissionGroupDetails_user {
-  __typename: "User";
+  __typename: "Member";
   editableGroups: (PermissionGroupDetails_user_editableGroups | null)[] | null;
   userPermissions: (PermissionGroupDetails_user_userPermissions | null)[] | null;
 }

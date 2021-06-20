@@ -47,7 +47,7 @@ export interface RemoveCustomerAddress_addressDelete_user_defaultShippingAddress
 }
 
 export interface RemoveCustomerAddress_addressDelete_user {
-  __typename: "User";
+  __typename: "Member";
   id: string;
   email: string;
   firstName: string;

@@ -22,7 +22,7 @@ export const permissionGroups: PermissionGroupList_permissionGroups_edges_node[]
           id: "VXNlcjoyMQ==",
           firstName: "",
           lastName: "",
-          __typename: "User" as "User"
+          __typename: "Member" as "Member"
         }
       ],
       __typename: "Group" as "Group"
@@ -39,7 +39,7 @@ export const permissionGroups: PermissionGroupList_permissionGroups_edges_node[]
           id: "VXNlcjoyMQ==",
           firstName: "",
           lastName: "",
-          __typename: "User" as "User"
+          __typename: "Member" as "Member"
         }
       ],
       __typename: "Group" as "Group"
@@ -66,13 +66,13 @@ export const permissionGroups: PermissionGroupList_permissionGroups_edges_node[]
           id: "VXNlcjoyMw==",
           firstName: "Bryan",
           lastName: "Rodgers",
-          __typename: "User" as "User"
+          __typename: "Member" as "Member"
         },
         {
           id: "VXNlcjoyMg==",
           firstName: "Joshua",
           lastName: "Mitchell",
-          __typename: "User" as "User"
+          __typename: "Member" as "Member"
         }
       ],
       __typename: "Group" as "Group"
@@ -143,7 +143,7 @@ export const permissionGroup: PermissionGroupDetails_permissionGroup = {
       id: "VXNlcjoyMg==",
       firstName: "Joshua",
       lastName: "Mitchell",
-      __typename: "User",
+      __typename: "Member",
       email: "joshua.mitchell@example.com",
       isActive: true,
       avatar: null
@@ -152,7 +152,7 @@ export const permissionGroup: PermissionGroupDetails_permissionGroup = {
       id: "VXNlcjoyMw==",
       firstName: "Bryan",
       lastName: "Rodgers",
-      __typename: "User",
+      __typename: "Member",
       email: "bryan.rodgers@example.com",
       isActive: true,
       avatar: null
@@ -181,7 +181,7 @@ export const users: SearchStaffMembers_search_edges_node[] = [
         url: avatarImg,
         __typename: "Image" as "Image"
       },
-      __typename: "User" as "User"
+      __typename: "Member" as "Member"
     },
     __typename: "UserCountableEdge" as "UserCountableEdge"
   },
@@ -197,7 +197,7 @@ export const users: SearchStaffMembers_search_edges_node[] = [
         url: avatarImg,
         __typename: "Image" as "Image"
       },
-      __typename: "User" as "User"
+      __typename: "Member" as "Member"
     },
     __typename: "UserCountableEdge" as "UserCountableEdge"
   },
@@ -213,7 +213,7 @@ export const users: SearchStaffMembers_search_edges_node[] = [
         url: avatarImg,
         __typename: "Image" as "Image"
       },
-      __typename: "User" as "User"
+      __typename: "Member" as "Member"
     },
     __typename: "UserCountableEdge" as "UserCountableEdge"
   },
@@ -229,7 +229,7 @@ export const users: SearchStaffMembers_search_edges_node[] = [
         url: avatarImg,
         __typename: "Image" as "Image"
       },
-      __typename: "User" as "User"
+      __typename: "Member" as "Member"
     },
     __typename: "UserCountableEdge" as "UserCountableEdge"
   }

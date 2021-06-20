@@ -19,28 +19,28 @@ import { SearchOrderVariant_search_edges_node } from "./types/SearchOrderVariant
 
 export const clients: SearchCustomers_search_edges_node[] = [
   {
-    __typename: "User" as "User",
+    __typename: "Member" as "Member",
     email: "test.client1@example.com",
     firstName: "John",
     id: "c1",
     lastName: "Doe"
   },
   {
-    __typename: "User" as "User",
+    __typename: "Member" as "Member",
     email: "test.client2@example.com",
     firstName: "Dough",
     id: "c2",
     lastName: "Jones"
   },
   {
-    __typename: "User" as "User",
+    __typename: "Member" as "Member",
     email: "test.client3@example.com",
     firstName: "Jonas",
     id: "c3",
     lastName: "Dough"
   },
   {
-    __typename: "User" as "User",
+    __typename: "Member" as "Member",
     email: "test.client4@example.com",
     firstName: "Bill",
     id: "c4",
@@ -827,7 +827,7 @@ export const order = (placeholder: string): OrderDetails_order => ({
       quantity: 1,
       type: OrderEventsEnum.FULFILLMENT_FULFILLED_ITEMS,
       user: {
-        __typename: "User",
+        __typename: "Member",
         email: "admin@example.com",
         id: "QWRkcmVzczoxNQ=="
       }

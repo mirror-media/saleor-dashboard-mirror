@@ -47,7 +47,7 @@ export interface SetCustomerDefaultAddress_addressSetDefault_user_defaultShippin
 }
 
 export interface SetCustomerDefaultAddress_addressSetDefault_user {
-  __typename: "User";
+  __typename: "Member";
   id: string;
   email: string;
   firstName: string;

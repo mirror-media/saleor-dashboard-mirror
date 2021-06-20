@@ -137,9 +137,9 @@ export const staffMembers: StaffList_staffUsers_edges_node[] = [
     isActive: true,
     lastName: "Smith"
   }
-].map(staffMember => ({ __typename: "User" as "User", ...staffMember }));
+].map(staffMember => ({ __typename: "Member" as "Member", ...staffMember }));
 export const staffMember: StaffMemberDetails_user = {
-  __typename: "User",
+  __typename: "Member",
   avatar: { __typename: "Image" as "Image", url: avatarImage },
   email: "admin@example.com",
   firstName: "Jacob",

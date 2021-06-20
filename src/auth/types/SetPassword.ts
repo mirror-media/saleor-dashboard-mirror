@@ -26,7 +26,7 @@ export interface SetPassword_setPassword_user_avatar {
 }
 
 export interface SetPassword_setPassword_user {
-  __typename: "User";
+  __typename: "Member";
   id: string;
   email: string;
   firstName: string;

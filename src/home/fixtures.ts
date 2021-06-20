@@ -23,7 +23,7 @@ export const shop: (placeholderImage: string) => Home = (
           quantity: null,
           type: OrderEventsEnum.PLACED_FROM_DRAFT,
           user: {
-            __typename: "User",
+            __typename: "Member",
             email: "admin@example.com",
             id: "VXNlcjoyMQ=="
           }
@@ -81,7 +81,7 @@ export const shop: (placeholderImage: string) => Home = (
           quantity: null,
           type: OrderEventsEnum.PLACED_FROM_DRAFT,
           user: {
-            __typename: "User",
+            __typename: "Member",
             email: "admin@example.com",
             id: "VXNlcjoyMQ=="
           }
@@ -103,7 +103,7 @@ export const shop: (placeholderImage: string) => Home = (
           quantity: null,
           type: OrderEventsEnum.PLACED_FROM_DRAFT,
           user: {
-            __typename: "User",
+            __typename: "Member",
             email: "admin@example.com",
             id: "VXNlcjoyMQ=="
           }
@@ -125,7 +125,7 @@ export const shop: (placeholderImage: string) => Home = (
           quantity: null,
           type: OrderEventsEnum.PLACED_FROM_DRAFT,
           user: {
-            __typename: "User",
+            __typename: "Member",
             email: "admin@example.com",
             id: "VXNlcjoyMQ=="
           }
@@ -147,7 +147,7 @@ export const shop: (placeholderImage: string) => Home = (
           quantity: null,
           type: OrderEventsEnum.PLACED_FROM_DRAFT,
           user: {
-            __typename: "User",
+            __typename: "Member",
             email: "admin@example.com",
             id: "VXNlcjoyMQ=="
           }
@@ -187,7 +187,7 @@ export const shop: (placeholderImage: string) => Home = (
           quantity: null,
           type: OrderEventsEnum.PLACED_FROM_DRAFT,
           user: {
-            __typename: "User",
+            __typename: "Member",
             email: "admin@example.com",
             id: "VXNlcjoyMQ=="
           }
@@ -209,7 +209,7 @@ export const shop: (placeholderImage: string) => Home = (
           quantity: null,
           type: OrderEventsEnum.PLACED_FROM_DRAFT,
           user: {
-            __typename: "User",
+            __typename: "Member",
             email: null,
             id: "VXNlcjoyMQ=="
           }

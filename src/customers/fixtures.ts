@@ -680,7 +680,7 @@ export const customers = [
 
 export const customerList: ListCustomers_customers_edges_node[] = [
   {
-    __typename: "User",
+    __typename: "Member",
     email: "Curtis.bailey@example.com",
     firstName: "curtis",
     id: "VXNlcjox",
@@ -691,7 +691,7 @@ export const customerList: ListCustomers_customers_edges_node[] = [
     }
   },
   {
-    __typename: "User",
+    __typename: "Member",
     email: "curtis.bailey@example.com",
     firstName: "Curtis",
     id: "VXNlcjox",
@@ -702,7 +702,7 @@ export const customerList: ListCustomers_customers_edges_node[] = [
     }
   },
   {
-    __typename: "User",
+    __typename: "Member",
     email: "elizabeth.vaughn@example.com",
     firstName: "Elizabeth",
     id: "VXNlcjoy",
@@ -713,7 +713,7 @@ export const customerList: ListCustomers_customers_edges_node[] = [
     }
   },
   {
-    __typename: "User",
+    __typename: "Member",
     email: "michael.martinez@example.com",
     firstName: "Michael",
     id: "VXNlcjoz",
@@ -724,7 +724,7 @@ export const customerList: ListCustomers_customers_edges_node[] = [
     }
   },
   {
-    __typename: "User",
+    __typename: "Member",
     email: "kayla.griffin@example.com",
     firstName: "Kayla",
     id: "VXNlcjo0",
@@ -735,7 +735,7 @@ export const customerList: ListCustomers_customers_edges_node[] = [
     }
   },
   {
-    __typename: "User",
+    __typename: "Member",
     email: "donna.robinson@example.com",
     firstName: "Donna",
     id: "VXNlcjo1",
@@ -746,7 +746,7 @@ export const customerList: ListCustomers_customers_edges_node[] = [
     }
   },
   {
-    __typename: "User",
+    __typename: "Member",
     email: "james.ball@example.com",
     firstName: "James",
     id: "VXNlcjo2",
@@ -757,7 +757,7 @@ export const customerList: ListCustomers_customers_edges_node[] = [
     }
   },
   {
-    __typename: "User",
+    __typename: "Member",
     email: "anthony.gonzalez@example.com",
     firstName: "Anthony",
     id: "VXNlcjo3",
@@ -768,7 +768,7 @@ export const customerList: ListCustomers_customers_edges_node[] = [
     }
   },
   {
-    __typename: "User",
+    __typename: "Member",
     email: "anthony.gonzalez@example.com",
     firstName: "Anthony",
     id: "VXNlcjo3",
@@ -779,7 +779,7 @@ export const customerList: ListCustomers_customers_edges_node[] = [
     }
   },
   {
-    __typename: "User",
+    __typename: "Member",
     email: "wesley.davis@example.com",
     firstName: "Wesley",
     id: "VXNlcjo4",
@@ -790,7 +790,7 @@ export const customerList: ListCustomers_customers_edges_node[] = [
     }
   },
   {
-    __typename: "User",
+    __typename: "Member",
     email: "laura.stone@example.com",
     firstName: "Laura",
     id: "VXNlcjo5",
@@ -801,7 +801,7 @@ export const customerList: ListCustomers_customers_edges_node[] = [
     }
   },
   {
-    __typename: "User",
+    __typename: "Member",
     email: "william.miller@example.com",
     firstName: "William",
     id: "VXNlcjoxMA==",
@@ -812,7 +812,7 @@ export const customerList: ListCustomers_customers_edges_node[] = [
     }
   },
   {
-    __typename: "User",
+    __typename: "Member",
     email: "donald.solomon@example.com",
     firstName: "Donald",
     id: "VXNlcjoxMQ==",
@@ -823,7 +823,7 @@ export const customerList: ListCustomers_customers_edges_node[] = [
     }
   },
   {
-    __typename: "User",
+    __typename: "Member",
     email: "anthony.young@example.com",
     firstName: "Anthony",
     id: "VXNlcjoxMg==",
@@ -834,7 +834,7 @@ export const customerList: ListCustomers_customers_edges_node[] = [
     }
   },
   {
-    __typename: "User",
+    __typename: "Member",
     email: "sharon.hanson@example.com",
     firstName: "Hanson",
     id: "VXNlcjoxMw==",
@@ -845,7 +845,7 @@ export const customerList: ListCustomers_customers_edges_node[] = [
     }
   },
   {
-    __typename: "User",
+    __typename: "Member",
     email: "laura.jensen@example.com",
     firstName: "Laura",
     id: "VXNlcjoxNA==",
@@ -856,7 +856,7 @@ export const customerList: ListCustomers_customers_edges_node[] = [
     }
   },
   {
-    __typename: "User",
+    __typename: "Member",
     email: "mark.lee@example.com",
     firstName: "Mark",
     id: "VXNlcjoxNQ==",
@@ -867,7 +867,7 @@ export const customerList: ListCustomers_customers_edges_node[] = [
     }
   },
   {
-    __typename: "User",
+    __typename: "Member",
     email: "david.lawson@example.com",
     firstName: "David",
     id: "VXNlcjoxNg==",
@@ -878,7 +878,7 @@ export const customerList: ListCustomers_customers_edges_node[] = [
     }
   },
   {
-    __typename: "User",
+    __typename: "Member",
     email: "david.lawson@example.com",
     firstName: "David",
     id: "VXNlcjoxNg==",
@@ -889,7 +889,7 @@ export const customerList: ListCustomers_customers_edges_node[] = [
     }
   },
   {
-    __typename: "User",
+    __typename: "Member",
     email: "faith.smith@example.com",
     firstName: "Faith",
     id: "VXNlcjoxNw==",
@@ -900,7 +900,7 @@ export const customerList: ListCustomers_customers_edges_node[] = [
     }
   },
   {
-    __typename: "User",
+    __typename: "Member",
     email: "john.jones@example.com",
     firstName: "John",
     id: "VXNlcjoxOA==",
@@ -911,7 +911,7 @@ export const customerList: ListCustomers_customers_edges_node[] = [
     }
   },
   {
-    __typename: "User",
+    __typename: "Member",
     email: "ronald.fisher@example.com",
     firstName: "Ronald",
     id: "VXNlcjoxOQ==",
@@ -922,7 +922,7 @@ export const customerList: ListCustomers_customers_edges_node[] = [
     }
   },
   {
-    __typename: "User",
+    __typename: "Member",
     email: "jason.gray@example.com",
     firstName: "Jason",
     id: "VXNlcjoyMA==",
@@ -933,7 +933,7 @@ export const customerList: ListCustomers_customers_edges_node[] = [
     }
   },
   {
-    __typename: "User",
+    __typename: "Member",
     email: "admin@example.com",
     firstName: "Tom",
     id: "VXNlcjoyMQ==",
@@ -945,7 +945,7 @@ export const customerList: ListCustomers_customers_edges_node[] = [
   }
 ];
 export const customer: CustomerDetails_user & CustomerAddresses_user = {
-  __typename: "User",
+  __typename: "Member",
   addresses: [
     {
       __typename: "Address",

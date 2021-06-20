@@ -51,7 +51,7 @@ export interface CustomerDetailsFragment_defaultBillingAddress {
 }
 
 export interface CustomerDetailsFragment {
-  __typename: "User";
+  __typename: "Member";
   id: string;
   email: string;
   firstName: string;

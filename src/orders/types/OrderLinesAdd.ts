@@ -49,7 +49,7 @@ export interface OrderLinesAdd_draftOrderLinesCreate_order_billingAddress {
 }
 
 export interface OrderLinesAdd_draftOrderLinesCreate_order_events_user {
-  __typename: "User";
+  __typename: "Member";
   id: string;
   email: string;
 }
@@ -271,7 +271,7 @@ export interface OrderLinesAdd_draftOrderLinesCreate_order_totalCaptured {
 }
 
 export interface OrderLinesAdd_draftOrderLinesCreate_order_user {
-  __typename: "User";
+  __typename: "Member";
   id: string;
   email: string;
 }

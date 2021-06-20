@@ -43,7 +43,7 @@ export interface OrderDetails_order_billingAddress {
 }
 
 export interface OrderDetails_order_events_user {
-  __typename: "User";
+  __typename: "Member";
   id: string;
   email: string;
 }
@@ -265,7 +265,7 @@ export interface OrderDetails_order_totalCaptured {
 }
 
 export interface OrderDetails_order_user {
-  __typename: "User";
+  __typename: "Member";
   id: string;
   email: string;
 }

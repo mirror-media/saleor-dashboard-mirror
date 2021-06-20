@@ -20,7 +20,7 @@ export interface StaffAvatarUpdate_userAvatarUpdate_user_avatar {
 }
 
 export interface StaffAvatarUpdate_userAvatarUpdate_user {
-  __typename: "User";
+  __typename: "Member";
   id: string;
   avatar: StaffAvatarUpdate_userAvatarUpdate_user_avatar | null;
 }
