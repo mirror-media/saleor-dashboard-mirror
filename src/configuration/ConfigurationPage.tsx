@@ -3,7 +3,7 @@ import CardContent from "@material-ui/core/CardContent";
 import { IconProps } from "@material-ui/core/Icon";
 import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
-import { User } from "@saleor/fragments/types/User";
+import { Member } from "@saleor/fragments/types/User";
 import { sectionNames } from "@saleor/intl";
 import React from "react";
 import { useIntl } from "react-intl";
@@ -92,7 +92,7 @@ const useStyles = makeStyles(
 
 export interface ConfigurationPageProps {
   menu: MenuSection[];
-  user: User;
+  user: Member;
   onSectionClick: (sectionName: string) => void;
 }
 

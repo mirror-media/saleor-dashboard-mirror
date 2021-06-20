@@ -1,5 +1,5 @@
 import { ShopInfo_shop_permissions } from "@saleor/components/Shop/types/ShopInfo";
-import { User } from "@saleor/fragments/types/User";
+import { Member } from "@saleor/fragments/types/User";
 import difference from "lodash-es/difference";
 
 import { PermissionGroupDetailsPageFormData } from "./components/PermissionGroupDetailsPage";
@@ -73,7 +73,7 @@ export const usersDiff = (
  */
 export const arePermissionsExceeded = (
   permissionGroup: PermissionGroupDetails_permissionGroup,
-  user: User
+  user: Member
 ) => {
   const groupPermissions = extractPermissionCodes(permissionGroup);
   const userPermissions = user.userPermissions.map(p => p.code);
