@@ -1,4 +1,4 @@
-import { User } from "@saleor/fragments/types/User";
+import { Member } from "@saleor/fragments/types/User";
 
 export const isSupported =
   navigator.credentials && navigator.credentials.preventSilentAccess;
@@ -15,7 +15,7 @@ export function login<T>(loginFn: (id: string, password: string) => T): T {
   return null;
 }
 
-export function saveCredentials(user: User, password: string) {
+export function saveCredentials(user: Member, password: string) {
   if (isSupported) {
     const cred = new PasswordCredential({
       iconURL: user.avatar ? user.avatar.url : undefined,

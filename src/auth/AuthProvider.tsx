@@ -1,6 +1,6 @@
 import { IMessageContext } from "@saleor/components/messages";
 import { DEMO_MODE } from "@saleor/config";
-import { User } from "@saleor/fragments/types/User";
+import { Member } from "@saleor/fragments/types/User";
 import useNotifier from "@saleor/hooks/useNotifier";
 import { getMutationStatus } from "@saleor/misc";
 import {
@@ -37,7 +37,7 @@ export function useAuthProvider(
   notify: IMessageContext,
   apolloClient: ApolloClient<any>
 ) {
-  const [userContext, setUserContext] = useState<undefined | User>(undefined);
+  const [userContext, setUserContext] = useState<undefined | Member>(undefined);
   const autologinPromise = useRef<Promise<any>>();
   const refreshPromise = useRef<Promise<boolean>>();
 
@@ -139,7 +139,7 @@ export function useAuthProvider(
     return null;
   };
 
-  const loginByToken = (auth: string, refresh: string, user: User) => {
+  const loginByToken = (auth: string, refresh: string, user: Member) => {
     setUserContext(user);
     setTokens(auth, refresh, persistToken);
   };

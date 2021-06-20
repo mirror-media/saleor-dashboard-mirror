@@ -1,6 +1,6 @@
 import { createConfigurationMenu } from "@saleor/configuration";
 import ConfigurationPage from "@saleor/configuration/ConfigurationPage";
-import { User } from "@saleor/fragments/types/User";
+import { Member } from "@saleor/fragments/types/User";
 import { staffMember } from "@saleor/staff/fixtures";
 import Decorator from "@saleor/storybook/Decorator";
 import { storiesOf } from "@storybook/react";
@@ -22,7 +22,7 @@ const user = {
   userPermissions: staffMember.userPermissions
 };
 
-const Story: React.FC<{ user: User }> = ({ user }) => {
+const Story: React.FC<{ user: Member }> = ({ user }) => {
   const intl = useIntl();
 
   return (

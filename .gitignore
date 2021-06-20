@@ -40,3 +40,6 @@ webpack-bundle.json
 
 # Exported results file
 django-queries-results.html
+.idea/
+*.code-workspace
+launch.json

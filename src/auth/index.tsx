@@ -1,4 +1,4 @@
-import { User } from "@saleor/fragments/types/User";
+import { Member } from "@saleor/fragments/types/User";
 import React from "react";
 import { Route, Switch } from "react-router-dom";
 
@@ -15,12 +15,12 @@ import ResetPasswordSuccess from "./views/ResetPasswordSuccess";
 
 interface UserContext {
   login: (username: string, password: string) => void;
-  loginByToken: (auth: string, csrf: string, user: User) => void;
+  loginByToken: (auth: string, csrf: string, user: Member) => void;
   logout: () => void;
   tokenAuthLoading: boolean;
   tokenRefresh: () => Promise<boolean>;
   tokenVerifyLoading: boolean;
-  user?: User;
+  user?: Member;
 }
 
 export const UserContext = React.createContext<UserContext>({
