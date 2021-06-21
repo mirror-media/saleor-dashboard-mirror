@@ -8,12 +8,15 @@ import {
   login as loginWithCredentialsManagementAPI,
   saveCredentials
 } from "@saleor/utils/credentialsManagement";
+import { InMemoryCache } from "apollo-cache-inmemory";
 import ApolloClient from "apollo-client";
 import React, { useContext, useEffect, useRef, useState } from "react";
-import { useApolloClient, useMutation } from "react-apollo";
+// import { useApolloClient, useMutation } from "react-apollo";
+import { useMutation } from "react-apollo";
 import { IntlShape, useIntl } from "react-intl";
 
 import { UserContext } from "./";
+import { tokenLink } from "./link";
 import {
   tokenAuthMutation,
   tokenRefreshMutation,
@@ -180,7 +183,11 @@ interface AuthProviderProps {
 }
 
 const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
-  const apolloClient = useApolloClient();
+  // const apolloClient = useApolloClient();
+  const apolloClient = new ApolloClient({
+    link: tokenLink,
+    cache: new InMemoryCache()
+  });
   const intl = useIntl();
   const notify = useNotifier();
 
